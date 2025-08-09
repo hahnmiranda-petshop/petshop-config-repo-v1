@@ -1,0 +1,16 @@
+# Configurações comuns a todos os serviços
+spring:
+  jackson:
+    default-property-inclusion: non_null
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+
+app:
+  http:
+    client:
+      connect-timeout-ms: 1000
+      read-timeout-ms: 2000

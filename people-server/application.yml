@@ -1,0 +1,4 @@
+# Configurações padrão do people-server
+spring:
+  application:
+    name: people-server

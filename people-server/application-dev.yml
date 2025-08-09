@@ -1,0 +1,17 @@
+# Configurações de desenvolvimento do people-server
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/petshop_people?useSSL=false&serverTimezone=UTC
+    username: dev
+    password: dev
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+app:
+  cache:
+    ttl-seconds: 300
